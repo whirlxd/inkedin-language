@@ -1,0 +1,193 @@
+
+// LinkedIn Language Diagnostic Test Suite 🚀
+announce("🔍 Running LinkedIn Language Feature Test...");
+network "./test/import.lnk";
+connect allPassed = true;
+
+// ✅ VARIABLE TEST
+connect testVar = 10;
+pivot (testVar == 10) {
+    announce("✅ Variable declaration & assignment: Passed");
+} circle_back {
+    announce("❌ Variable test failed.");
+    allPassed = false;
+}
+
+// ✅ FUNCTION + RETURN TEST
+thoughts add(a, b) {
+    reach_out a + b;
+}
+connect sum = add(5, 7);
+pivot (sum == 12) {
+    announce("✅ Function declaration & return: Passed");
+} circle_back {
+    announce("❌ Function test failed.");
+    allPassed = false;
+}
+
+// ✅ CONTROL FLOW TEST
+connect controlFlowResult = "";
+pivot (sum > 10) {
+    controlFlowResult = "yes";
+} circle_back {
+    controlFlowResult = "no";
+}
+pivot (controlFlowResult == "yes") {
+    announce("✅ If-Else (pivot-circle_back): Passed");
+} circle_back {
+    announce("❌ If-Else test failed.");
+    allPassed = false;
+}
+
+// ✅ LOOP TEST
+connect counter = 0;
+leverage (connect i = 0; i < 5; i = i + 1) {
+    counter = counter + 1;
+}
+pivot (counter == 5) {
+    announce("✅ For Loop (leverage): Passed");
+} circle_back {
+    announce("❌ For Loop test failed.");
+    allPassed = false;
+}
+
+// ✅ WHILE LOOP TEST
+connect whileCount = 0;
+synergy (whileCount < 3) {
+    whileCount = whileCount + 1;
+}
+pivot (whileCount == 3) {
+    announce("✅ While Loop (synergy): Passed");
+} circle_back {
+    announce("❌ While Loop test failed.");
+    allPassed = false;
+}
+
+// ✅ ERROR HANDLING TEST
+thoughts divideTest(a, b) {
+    game_changer {
+        reach_out a / b;
+    } lessons_learned {
+        reach_out "error";
+    }
+}
+connect division = divideTest(4, 0);
+pivot (division == "error") {
+    announce("✅ Error Handling (game_changer-lessons_learned): Passed");
+} circle_back {
+    announce("❌ Error Handling test failed.");
+    allPassed = false;
+}
+
+// ✅ BUILT-IN FUNCTIONS TEST
+connect text = "LinkedIn";
+connect length = len(text);
+pivot (length == 8) {
+    announce("✅ Built-in Function (len): Passed");
+} circle_back {
+    announce("❌ Built-in Function test failed.");
+    allPassed = false;
+}
+
+// ✅ OPERATORS TEST
+connect opTest = (5 + 3) * 2;
+pivot (opTest == 16) {
+    announce("✅ Arithmetic Operators: Passed");
+} circle_back {
+    announce("❌ Arithmetic Operators test failed.");
+    allPassed = false;
+}
+
+connect logicTest = true && !false;
+pivot (logicTest == true) {
+    announce("✅ Logical Operators: Passed");
+} circle_back {
+    announce("❌ Logical Operators test failed.");
+    allPassed = false;
+}
+
+connect compareTest = 10 > 3;
+pivot (compareTest) {
+    announce("✅ Comparison Operators: Passed");
+} circle_back {
+    announce("❌ Comparison Operators test failed.");
+    allPassed = false;
+}
+// 🎯 Break + Continue (Disrupt + Scale) Test
+connect disruptSum = 0;
+leverage (connect i = 0; i < 10; i = i + 1) {
+    pivot (i == 3) {
+        scale;  // Should skip i = 3
+    }
+    pivot (i == 5) {
+        disrupt;  // Should break loop
+    }
+    disruptSum = disruptSum + i;
+}
+pivot (disruptSum == 7) {
+    announce("✅ Break/Continue (disrupt/scale): Passed");
+} circle_back {
+    announce("❌ Break/Continue test failed.");
+    allPassed = false;
+}
+
+// 🎯 Type Conversion Test
+connect rawNum = "50";
+connect parsedNum = num(rawNum);
+connect backToText = str(parsedNum);
+pivot (parsedNum == 50 && backToText == "50") {
+    announce("✅ str()/num() Conversion: Passed");
+} circle_back {
+    announce("❌ str()/num() Conversion test failed.");
+    allPassed = false;
+}
+
+// 🎯 Input Function Test (Requires Manual Input)
+connect testInput = input("Type 'test' to pass: ");
+pivot (testInput == "test") {
+    announce("✅ input() Function: Passed");
+} circle_back {
+    announce("❌ input() Function test failed.");
+    allPassed = false;
+}
+
+// 🎯 Nested Function & Scope Test
+thoughts outerScope(x) {
+    thoughts innerScope(y) {
+        reach_out x + y;
+    }
+    reach_out innerScope(5);
+}
+connect scopeResult = outerScope(10);
+pivot (scopeResult == 15) {
+    announce("✅ Nested Functions & Scope: Passed");
+} circle_back {
+    announce("❌ Nested Function test failed.");
+    allPassed = false;
+}
+
+
+pivot (importedValue == 42) {
+    announce("✅ Variable import via network: Passed");
+} circle_back {
+    announce("❌ Variable import via network: Failed");
+    allPassed = false;
+}
+
+connect result = importedFunction(5);
+pivot (result == 10) {
+    announce("✅ Function import via network: Passed");
+} circle_back {
+    announce("❌ Function import via network: Failed");
+    allPassed = false;
+}
+// ✅ FINAL REPORT
+pivot (allPassed) {
+    announce("🎉 All tests passed! Your LinkedIn Language parser is operational and ready to disrupt!");
+} circle_back {
+    announce("⚠️ Some features failed. Time to circle back and iterate.");
+}
+
+
+
+    

@@ -1,0 +1,6 @@
+// import_test.lnk
+connect importedValue = 42;
+
+thoughts importedFunction(x) {
+    reach_out x * 2;
+}

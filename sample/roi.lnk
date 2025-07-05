@@ -1,0 +1,11 @@
+//for our first program we will make a ROI calculator because YC's would defo be looking at it
+connect greeting = "Thrilled to share my coding journey with my network!";
+announce(greeting);
+
+thoughts calculateROI(investment, returns) {
+    connect roi = (returns - investment) / investment * 100;
+    reach_out roi;
+}
+
+connect result = calculateROI(1000, 1500);
+announce("ROI:", result, "%");

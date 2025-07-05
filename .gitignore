@@ -1,0 +1,6 @@
+guide.md
+ai.md
+language.py
+.venv
+*.__pycache__
+*color
