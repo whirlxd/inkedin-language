@@ -1,0 +1,4 @@
+This project was built with the help of AI.
+The code is perhaps the part where least amount of AI was used.
+It is a programming language that allows you to write code in a way that sounds like LinkedIn and i really did not like writing the same thing again and again hence the example programs are all AI which along with the guide and readme which i just fed my notes and the code to AI and it generated the text.
+The code is written in Python and is a simple interpreter that can execute LinkedIn-like code a lot of the design structure is inspired by when i made my own shell(brainrot-shell) and you will see a lot of code is just a wrapper over python albeit still complex and actually different.

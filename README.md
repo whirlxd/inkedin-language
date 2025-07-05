@@ -1,3 +1,4 @@
+
 <div align="center">
 
 # 🚀 LinkedIn Language
@@ -71,17 +72,16 @@ LinkedIn Language is a **game-changing** programming language that leverages cor
 
 <br>
 
+</div>
+
 ## 🎯 Quick Start
 
 ### Installation
 
 ```bash
 git clone https://github.com/whirlxd/linkedin-language.git
-```
-
-```bash
 cd linkedin-language
-```
+````
 
 ### Run Your Program
 
@@ -91,6 +91,7 @@ python cli.py test.lnk
 
 <br>
 
+<div align="center">
 
 ## 🛠️ CLI Usage
 
@@ -119,33 +120,17 @@ python cli.py test.lnk
 
 <br>
 
-## 📁 Project Structure
+</div>
 
-```plaintext
-linkedin-language/
-├── main.py              # Main interpreter entry point
-├── cli.py               # Command-line interface
-├── guide.md             # Comprehensive programming guide
-├── language/
-│   ├── lexer.py         # Tokenization
-│   ├── parser.py        # AST generation
-│   ├── interpreter.py   # Code execution
-│   ├── token_type.py    # Token definitions
-│   ├── ast_1.py         # AST node classes
-│   ├── errors.py        # Error handling
-│   └── ...
-├── examples/
-│   ├── hello.lnk        # Basic examples
-│   ├── math_utils.lnk   # Utility functions
-│   └── test_import.lnk  # Import demonstration
-└── README.md
-```
+## 🤝 Contributing
+We welcome contributions to make LinkedIn Language even more synergistic! Please read our [**Contributing Guide**](CONTRIBUTING.md) for details on how to get started.
 
 <br>
 
 ## 🎨 Example Programs
 
 ### Personal Brand Calculator
+
 ```linkedin
 network "./career_utils.lnk";
 
@@ -165,6 +150,7 @@ thoughts calculateBrandStrength() {
 ```
 
 ### Business Logic
+
 ```linkedin
 thoughts processQuarterlySales(q1, q2, q3, q4) {
     connect total = q1 + q2 + q3 + q4;
@@ -182,7 +168,7 @@ thoughts processQuarterlySales(q1, q2, q3, q4) {
 
 <br>
 
-
+<div align="center">
 
 ## 📚 Documentation
 
@@ -192,7 +178,6 @@ For comprehensive documentation, examples, and best practices, check out our [**
 
 ## 🎯 Why LinkedIn Language?
 
-<div align="center">
 <table>
 <tr>
 <td align="center">💡</td>
@@ -207,7 +192,6 @@ For comprehensive documentation, examples, and best practices, check out our [**
 <td><b>Community</b><br>Built for networking and collaboration</td>
 </tr>
 </table>
-</div>
 
 <br>
 
@@ -219,19 +203,13 @@ This project is licensed under the GNU AGPL-V3 License - see the [LICENSE](LICEN
 
 ## 🌟 Star History
 
-<div align="center">
-
 ⭐ **Star this repository if LinkedIn Language helped you level up your coding game!** ⭐
 
 *Let's create synergy and disrupt the programming language space together!*
 
-</div>
-
 <br>
 
 ---
-
-<div align="center">
 
 **Made with 💼 by professional developers for professional developers**
 
@@ -239,8 +217,6 @@ This project is licensed under the GNU AGPL-V3 License - see the [LICENSE](LICEN
 
 <br>
 
-[🚀 Get Started - Coming soon with V1](#-quick-start) • [📚 Documentation](guide.md) • [💻 Examples coming soon with v1](#-example-programs) • [🤝 Contribute](#-contributing)
-
-</div>
+[🚀 Get Started - Coming soon with V1](#-quick-start) • [📚 Documentation](docs.md) • [💻 Examples coming soon with v1](#-example-programs) • [🤝 Contribute](CONTRIBUTING.md)
 
 </div>
