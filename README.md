@@ -236,6 +236,8 @@ This project is licensed under the GNU AGPL-V3 License - see the [LICENSE](LICEN
 - [ ] Add API/insights support for REST calls
 - [ ] Add more built-in functions (json,file,random)
 - [ ] Modify data types to be more LinkedIn-like
+- [ ] Color theme
+
 
 ---
 <div align="center">
