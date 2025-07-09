@@ -1,0 +1,44 @@
+thoughts calculatorLoop() {
+    connect keepGoing = true;
+
+    synergy (keepGoing) {
+        game_changer {
+            connect num1 = num(input("Enter first number: "));
+            connect operator = input("Enter operator (+, -, *, /, %): ");
+            connect num2 = num(input("Enter second number: "));
+
+            pivot (operator == "+") {
+                announce("Result:", num1 + num2);
+            } circle_back pivot (operator == "-") {
+                announce("Result:", num1 - num2);
+            } circle_back pivot (operator == "*") {
+                announce("Result:", num1 * num2);
+            } circle_back pivot (operator == "/") {
+                pivot (num2 == 0) {
+                    announce("Error: Division by zero is not a growth strategy.");
+                } circle_back {
+                    announce("Result:", num1 / num2);
+                }
+            } circle_back pivot (operator == "%") {
+                pivot (num2 == 0) {
+                    announce("Error: Modulo by zero disrupts the process.");
+                } circle_back {
+                    announce("Result:", num1 % num2);
+                }
+            } circle_back {
+                announce("Invalid operator. Use +, -, *, /, or % to stay on track.");
+            }
+        } lessons_learned {
+            announce("Something went wrong - consider it a networking opportunity with bugs.");
+        }
+
+        connect again = input("Do you want to calculate again? (yes/no): ");
+        pivot (again != "yes") {
+            keepGoing = false;
+            announce("Session ended. Stay impactful! 💼");
+        }
+    }
+}
+
+// Run the calculator loop
+calculatorLoop();

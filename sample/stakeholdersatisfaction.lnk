@@ -1,0 +1,25 @@
+thoughts runSurvey() {
+    connect numStakeholders = num(input("Number of stakeholders surveyed: "));
+    connect sum = 0;
+    connect i = 1;
+
+    synergy (i <= numStakeholders) {
+        connect score = num(input("Satisfaction score (1-10) from stakeholder " + str(i) + ": "));
+        sum = sum + score;
+        i = i + 1;
+    }
+
+    connect average = sum / numStakeholders;
+
+    pivot (average >= 8) {
+        announce("🎉 Stakeholder sentiment is excellent!");
+    } circle_back pivot (average >= 5) {
+        announce("⚠️ Acceptable sentiment, room for synergy.");
+    } circle_back {
+        announce("🚨 Stakeholder crisis detected. Time to pivot.");
+    }
+
+    announce("Average score:", average);
+}
+
+runSurvey();

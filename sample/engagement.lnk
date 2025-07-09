@@ -1,0 +1,20 @@
+thoughts analyzeEngagement() {
+    connect totalPosts = num(input("How many posts did you make this month? "));
+    connect sumEngagement = 0;
+    connect count = 1;
+
+    synergy (count <= totalPosts) {
+        connect engagement = num(input("Engagement on post " + str(count) + ": "));
+        sumEngagement = sumEngagement + engagement;
+        count = count + 1;
+    }
+
+    pivot (totalPosts > 0) {
+        connect average = sumEngagement / totalPosts;
+        announce("Your average engagement rate is:", average);
+    } circle_back {
+        announce("No posts made this month — no data to analyze.");
+    }
+}
+
+analyzeEngagement();

@@ -1,4 +1,3 @@
-
 <div align="center">
 
 # 🚀 LinkedIn Language
@@ -15,14 +14,17 @@
 
 [![Language](https://img.shields.io/badge/Language-Python-blue.svg)](https://python.org)
 [![Extension](https://img.shields.io/badge/Extension-.lnk-green.svg)](#)
-[![Status](https://img.shields.io/badge/Status-Ready%20to%20Disrupt-orange.svg)](#)
-[![Synergy](https://img.shields.io/badge/Synergy-Maximized-purple.svg)](#)
+[![Status](https://img.shields.io/badge/Status-Web%20Vers%20Soon-orange.svg)](#)
 
+[![License](https://img.shields.io/badge/License-AGPL--3.0-red.svg)](https://www.gnu.org/licenses/agpl-3.0.en.html)
 <br>
 
 ## 🌟 What is LinkedIn Language?
 
-LinkedIn Language is a **game-changing** programming language that leverages corporate buzzwords to create synergy between your technical skills and professional networking presence. Instead of boring keywords like `var` or `function`, we use exciting business terminology that will make your code sound like it could get 1000+ likes on LinkedIn!
+LinkedIn Language is a game-changing programming language that leverages corporate buzzwords to create synergy between your technical skills and professional networking presence. Instead of boring keywords like `var` or `function`, we use exciting business terminology that will make your code sound like it could get 1000+ likes on LinkedIn!
+<br>
+
+or in english, it is a **programming language that allows you to write code in a way that sounds like LinkedIn posts**.
 
 <br>
 
@@ -81,7 +83,7 @@ LinkedIn Language is a **game-changing** programming language that leverages cor
 ```bash
 git clone https://github.com/whirlxd/linkedin-language.git
 cd linkedin-language
-````
+```
 
 ### Run Your Program
 
@@ -210,6 +212,32 @@ This project is licensed under the GNU AGPL-V3 License - see the [LICENSE](LICEN
 <br>
 
 ---
+</div>
+
+## 🧑‍💻 Local Development
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/whirlxd/linkedin-language.git
+   cd linkedin-language
+   ```
+2. Run tests:
+   ```bash
+   python main.py test.lnk
+   ```
+3. For CLI usage, see the [Quick Start](#quick-start) section above.
+
+---
+
+## 📝 TODO
+> in priority order
+- [ ] Web playground version
+- [ ] Add API/insights support for REST calls
+- [ ] Add more built-in functions (json,file,random)
+- [ ] Modify data types to be more LinkedIn-like
+
+---
+<div align="center">
 
 **Made with 💼 by professional developers for professional developers**
 
@@ -217,6 +245,6 @@ This project is licensed under the GNU AGPL-V3 License - see the [LICENSE](LICEN
 
 <br>
 
-[🚀 Get Started - Coming soon with V1](#-quick-start) • [📚 Documentation](docs.md) • [💻 Examples coming soon with v1](#-example-programs) • [🤝 Contribute](CONTRIBUTING.md)
-
+[🚀 Guide ](guide.md) • [📚 Documentation](docs.md) • [💻 Examples](examples.md) • [🤝 Contribute](CONTRIBUTING.md)
 </div>
+
