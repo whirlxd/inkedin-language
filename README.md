@@ -1,7 +1,8 @@
 <div align="center">
 
-# 🚀 LinkedIn Language
+<img src="./lnkbanner.png" alt="LinkedIn Language Banner"  >
 
+ ---
 <p align="center">
   <b>The most synergistic programming language for thought leaders and change makers!</b>
 </p>
